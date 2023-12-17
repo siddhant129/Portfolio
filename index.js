@@ -17,58 +17,66 @@ function opentab(tabName) {
 
 // For side menu
 var sidemenu = document.getElementById('sidemenu');
-function openmenu(){
+function openmenu() {
     sidemenu.style.right = "0";
 
 }
-function closemenu(){
-    sidemenu.style.right ="-150px"
+function closemenu() {
+    sidemenu.style.right = "-150px"
 }
 
 // For contact form
 const msg = document.getElementById("msg")
 const form = document.forms['submit-to-google-form']
 
-form.addEventListener('submit',e=>{
+form.addEventListener('submit', e => {
     e.preventDefault
     msg.innerHTML = 'Message sent successfully'
-    setTimeout(function(){
+    setTimeout(function () {
         msg.innerHTML = '';
 
-    },5000)
+    }, 5000)
     form.reset()
 })
-
-
 
 const jobTitle = document.getElementById('jobTitle')
 
 let titleText = jobTitle.innerText
-console.log(titleText);
-
+const backVar = 'Backend Developer ';
+const webVar = 'Web Developer '
 let newTitle = titleText
-const flag = 1
+let currentTitle = webVar
+let flag = 0
+
 setInterval(() => {
     let ttitleLen = newTitle.length
-    if (ttitleLen >=1) {
-        newTitle = newTitle.substring(0,ttitleLen-1)
-        console.log(titleText);
+    if (ttitleLen >= 1 && flag === 0) {
+        newTitle = newTitle.substring(0, ttitleLen - 1)
         let newTitle1 = newTitle.concat('|')
-        console.log(newTitle);
         jobTitle.innerHTML = newTitle1
-    }
-    else if(ttitleLen == 0){
-        if (titleText === 'Web Developer |'){
-            newTitle = 'Backend Developer |'
-            titleText = 'Backend Developer |'
+        if (ttitleLen === 1 && currentTitle === webVar) {
+            flag = 1;
+            currentTitle = backVar
         }
-        else{
-            newTitle = 'Web Developer |'
-            titleText = 'Web Developer |'
+        else if (ttitleLen === 1 && currentTitle === backVar) {
+            flag = 1;
+            currentTitle = webVar
+        }
+    }
+    else if (ttitleLen >= 0 && flag === 1) {
+        if (newTitle.length <= titleText.length) {
+            newTitle = currentTitle.substring(0, ttitleLen)
+            newTitle = newTitle.concat('|')
+            titleText = currentTitle
+            jobTitle.innerHTML = newTitle
+            if (ttitleLen === titleText.length) {
+                flag = 0
+            }
         }
     }
 
 }, 300);
+
 
 // for animation
 
