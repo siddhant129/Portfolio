@@ -22,7 +22,7 @@
             <nav>
                 <!-- <img src="Public/images/siddhant_Logo.jpg" class="logo" alt=""> -->
                 <!-- <h1 id="navText"><span style="color: #7632d0;">$</span>iddhant .</h1> -->
-                <h1 id="navText">$iddhant .</h1>
+                <h1 id="navText">Siddhant .</h1>
                 <ul id="sidemenu">
                     <!-- <li><a href="#header">Home</a></li> -->
                     <li><a class="sideMenuLinks" href="#about">About</a></li>
@@ -35,8 +35,8 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p id="jobTitle">Web Developer <span>|</span></p>
-                <h1>Hi, I am <span>Siddhant</span> <br> Halpatrao</h1>
+                <p style="color: #7DF9FF; font-family: 'Cascadia Mono';">< <span id="jobTitle" style="color: #00ffcb; font-family: 'Cascadia Mono';">Web Developer <span>|</span> </span>/> </p>
+                <h1>Hello, I'm <span>Siddhant</span> <br><p > Halpatrao</p></h1>
             </div>
         </div>
     </div>
@@ -46,8 +46,17 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="Public/images/Sid_img_01.png" alt="">
-                </div>
+                    
+                    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> 
+                        <defs> 
+                        <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                        <stop id="stop1" stop-color="rgba(0, 255, 203, 1)" offset="0%"></stop>                            
+                        <stop id="stop2" stop-color="rgba(125, 249, 255, 1)" offset="100%"></stop>                        
+                    </linearGradient> 
+                </defs>          
+                <path fill="url(#sw-gradient)" d="M32.8,-26.4C40,-17.1,41.6,-3.6,38.4,8.1C35.2,19.7,27.1,29.6,16.3,35.4C5.5,41.1,-7.9,42.8,-17.7,37.7C-27.6,32.7,-33.7,20.9,-35.1,9.6C-36.4,-1.8,-33,-12.7,-26.3,-21.8C-19.7,-31,-9.8,-38.5,1.5,-39.7C12.8,-40.9,25.6,-35.7,32.8,-26.4Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path></svg>      
+                        <img src="Public/images/Sid_img_01.png" alt="">
+                    </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
                     <p>I am a software engineer, currently working on SAP domain as a ABAP Developer and in my free time
@@ -55,8 +64,8 @@
                         Mostly I like to make backend websites
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" style="color: #0aa8e7;" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" style="color: #0aa8e7;" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-content active-tab" id="skills">
                         <ul>
@@ -65,6 +74,7 @@
                             <li><span>SQL</span></li>
                             <li><span>JavaScript</span></li>
                             <li><span>NodeJS</span></li>
+                            <li><span>Express</span></li>
                             <li><span>MongoDB</span></li>
                         </ul>
                     </div>
@@ -113,12 +123,12 @@
                         <div class="capgInt ">
 
                             <span>
-                                <h3 class="work-links active-link">Software Engineer</h3>
+                                <h3 class="work-links active-link" style="color: #0aa8e7; font-family: 'Cascadia Mono'">Software Engineer</h3>
                             </span>
                             <span>Capgemini . Full-time</span><br>
                             <!-- <span style="color: #b54769;;">Dec 2022 - Present</span> -->
-                            <span style="color: #592b95;">Dec 2022 - Present</span>
-                            <p>Working as a software Engineer on SAP ABAP technology.</p>
+                            <span style="color: #7DF9FF;">Dec 2022 - Present</span>
+                            <p>Working as a software Engineer on<span style="color: #00ffcb; font-family: 'Cascadia Mono'"> SAP ABAP</span> technology.</p>
                         </div>
                     </div>
                 </div>
@@ -134,11 +144,11 @@
                         <div class="capgInt ">
 
                             <span>
-                                <h3 class="work-links active-link">Web Developer</h3>
+                                <h3 class="work-links active-link" style="color: #0aa8e7; font-family: 'Cascadia Mono'">Web Developer</h3>
                             </span>
                             <span>Sparks Foundation . Intern</span><br>
-                            <span style="color: #592b95;">July 2021 - Aug 2021</span>
-                            <p> Worked on different technologies like PHP, HTML, CSS and MySQL.
+                            <span style="color: #00ffcb; color: #7DF9FF;">July 2021 - Aug 2021</span>
+                            <p> Worked on different technologies like <span style="color: #00ffcb; font-family: 'Cascadia Mono'"> PHP, HTML, CSS </span> and <span style="color: #00ffcb; font-family: 'Cascadia Mono'">MySQL</span>.
                                 Created a simple dynamic website Basic Banking System Where user can transfer money
                                 between multiple
                                 users.</p>
@@ -156,30 +166,30 @@
                 <h1 class="subtitle">My Services</h1>
                 <div class="services-list">
                     <div>
-                        <i class="fas fa-crop-alt fa-fade"></i>
-                        <h2>ABAP Developer</h2>
+                        <i class="fas fa-crop-alt fa-fade" style="color: #00ffcb;"></i>
+                        <h2 class="services-header" >ABAP Developer</h2>
                         <p>Have development knowledge and worked on a different objects of SAP R/3 & S/4 HANA system.
                             <br><br>
-                            <span style="font-weight: 900;"> Objects :-</span> CDS views, Adobe & Smart forms, BDC,
-                            Module Pool etc.
+                            <span style="font-weight: 900;"> Objects :-</span> <span class="services-skills-text">CDS views, Adobe & Smart forms, BDC,
+                            Module Pool etc.</span>
                         </p>
                         <a href="#">Learn More</a>
                     </div>
                     <div>
-                        <i class="fa-solid fa-code fa-beat-fade"></i>
-                        <h2>NodeJS</h2>
+                        <i class="fa-solid fa-code fa-beat-fade" style="color: #00ffcb;"></i>
+                        <h2 class="services-header">NodeJS</h2>
                         <p>Have a hands on knowledge on developing backend of websites using NodeJS, express, MongoDB
                             etc.<br><br>
-                            <span style="font-weight: 900;"> Objects :-</span> NodeJS, Express, MongoDB etc.
+                            <span style="font-weight: 900;"> Objects :-</span> <span class="services-skills-text">NodeJS, Express, MongoDB etc.</span>
                         </p>
                         <a href="#">Learn More</a>
                     </div>
                     <div>
-                        <i class="fa-solid fa-code fa-beat-fade"></i>
-                        <h2>Web Developer</h2>
-                        <p>Have a hands on knowledge on developing responsive web pages using HTML, CSS &
-                            JavaScript<br><br>
-                            <span style="font-weight: 900;"> Objects :-</span> JavaScript, HTMl, CSS etc.
+                        <i class="fa-solid fa-code fa-beat-fade" style="color: #00ffcb;"></i>
+                        <h2 class="services-header">Web Developer</h2>
+                        <p>Have a hands on knowledge on developing responsive web pages using <span class="services-skills-text"> HTML, CSS &
+                            JavaScript</span><br><br>
+                            <span style="font-weight: 900;"> Objects :-</span> <span class="services-skills-text"> JavaScript, HTMl, CSS etc.</span>
                         </p>
                         <a href="#">Learn More</a>
                     </div>

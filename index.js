@@ -30,7 +30,7 @@ const msg = document.getElementById("msg")
 const form = document.forms['submit-to-google-form']
 
 form.addEventListener('submit', e => {
-    e.preventDefault
+    e.preventDefault()
     msg.innerHTML = 'Message sent successfully'
     setTimeout(function () {
         msg.innerHTML = '';
@@ -75,7 +75,7 @@ setInterval(() => {
         }
     }
 
-}, 300);
+}, 130);
 
 
 // for animation

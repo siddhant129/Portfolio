@@ -1,14 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Aptos', sans-serif;
     box-sizing: border-box;
+    cursor:-webkit-grabbing;
 }
 
 .body {
-    background: #1d1d1d;
+    background: #1a1c2c;
     /* background: #6913e2; */
-    color: #fff;
+    /* background: #1f2833; */
+    color: #FEFFFF;
 }
 
 html {
@@ -18,7 +20,6 @@ html {
 #header {
     width: 100%;
     height: 100vh;
-    /* background-image: url(Public/images/siddhantImg.jpg); */
     background-size: cover;
     background-position: center;
 }
@@ -46,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FEFFFF;
     /* text-shadow: 0 1px 0 #17202A; */
     text-decoration: none;
     font-size: 18px;
@@ -61,8 +62,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    /* background: #ff040f; */
-    background: #7632d0;
+    background: #00ffcb;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -74,59 +74,33 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-
-    /* color: #C08FFE; */
-    background-image: linear-gradient(-225deg,
-            #a07dc2 9%,
-            /* #fff800 20%, */
-            /* #231557 10%, */
-            #6f35ae 29%,
-            #970032 47%,
-            #fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-
-    background-size: 100% auto;
-
-    color: #fff;
-    background-clip: text;
-
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-
+    color: #00ffcb;
+    /* color: #56e81b; */
     /* text-shadow: 0 0 5px currentColor; */
 }
 
 .header-text {
     margin-top: 20%;
     font-size: 30px;
-    /* text-shadow: 0px 0 0px; */
 }
 
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
-
-/* .header-text h1 span{ */
-/* color: #ff040f; */
-/* color: #7632d0; */
-/* } */
 /* Siddhant text animation */
 #navText {
+    font-family: 'Cascadia code';
     background-image: linear-gradient(-225deg,
             /* #231557 0%,
             #44107a 29%,
             #ff1361 67%,
             #fff800 100%, */
-            #fff800 5%,
-            #231557 17%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%);
+            #0aa8e7 5%,
+            #0b7963 17%,
+            #2d3047 29%,
+            #00ffcb 67%,
+            #0aa8e7 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -140,25 +114,10 @@ nav ul li a:hover {
 }
 
 .header-text h1 span {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            /* #fff800 5%, */
-            #ff1361 15%,
-            #231557 65%,
-            #44107a 29%,
-            #fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* animation: textclip 3s linear infinite; */
-    display: inline-block;
-    /* font-size: 190px; */
-    color: #ff040f;
+    color: #7DF9FF;
+    font-family: 'Cascadia Mono';
+    /* text-shadow: 0 0 10px #7DF9FF; */
+    /* color: #db3a34; */
 }
 
 @keyframes textclip {
@@ -175,8 +134,8 @@ nav ul li a:hover {
 /*              About            */
 
 #about {
-    padding: 80px 0px;
-    color: #ababab;
+    /* padding: 80px 0px; */
+    color: #FEFFFF;
     /* color: #C08FFE; */
 
 }
@@ -188,15 +147,25 @@ nav ul li a:hover {
 }
 
 .about-col-1 {
-    flex-basis: 35%;
+    flex-basis: 30%;
+    
 }
 
 .about-col-1 img {
-    width: 100%;
-    height: 90%;
-    border-radius: 15px;
-
+    width: 101%;
+    height: 93%;
+    border-radius: 135px 33%;
+    /* mix-blend-mode: color-burn; */
+    
 }
+#sw-js-blob-svg{
+    z-index: -1;
+    width: 440px;
+    height: 600px;
+    position: absolute;
+    transform: translate(-17%,-10%);
+}
+
 
 .about-col-2 {
     flex-basis: 60%;
@@ -205,24 +174,8 @@ nav ul li a:hover {
 .subtitle {
     font-size: 50px;
     font-weight: 600;
-    background-image: linear-gradient(-225deg,
-            #7640af 9%,
-            /* #fff800 20%, */
-            /* #231557 10%, */
-            #462767 29%,
-            #ff1361 67%,
-            #fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 100% auto;
-    color: #fff;
-    background-clip: text;
-
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-    transition: 0.5s;
+    /* color: #0aa8e7; */
+    color: #7DF9FF;
 }
 
 .tab-content {
@@ -247,7 +200,7 @@ nav ul li a:hover {
     width: 0;
     height: 3px;
     /* background: #ff040f; */
-    background: #5905c7;
+    background: #00ffcb;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -261,12 +214,14 @@ nav ul li a:hover {
 .tab-content ul li {
     list-style: none;
     margin: 10px 0;
+    
 }
 
 .tab-content ul li span {
     /* color: #b54769; */
-    color: #C08FFE;
+    color: #00ffcb;
     font-size: 14px;
+    font-family: 'Cascadia Mono'
 }
 
 .tab-content {
@@ -279,7 +234,14 @@ nav ul li a:hover {
 }
 
 /* services */
-
+.services-header{
+    font-family: 'Cascadia Mono'; 
+    color: #00ffcb;
+}
+.services-skills-text{
+    font-family: 'Cascadia Mono'; 
+    color: #00ffcb;
+}
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -309,7 +271,7 @@ nav ul li a:hover {
 
 .services-list a {
     text-decoration: none;
-    color: #fff;
+    color: #00ffcb;
     font-size: 12px;
     margin-top: 30px;
     display: inline-block;
@@ -317,7 +279,7 @@ nav ul li a:hover {
 
 .services-list div:hover {
     /* background: #ff040f; */
-    background: #7632d0;
+    /* background: #0aa8e7; */
     transform: translateY(-10px);
 }
 
@@ -330,7 +292,7 @@ nav ul li a:hover {
 
 .work {
     padding: 80px 0px;
-    color: #ababab;
+    color: #FEFFFF;
 }
 
 .work p {
@@ -366,7 +328,7 @@ hr {
 }
 
 .work-links {
-    margin-bottom: 2px;
+    margin-bottom: 7px;
     margin-right: 30px;
     font-size: 18px;
     font-weight: 500;
@@ -380,10 +342,10 @@ hr {
     width: 0%;
     height: 3px;
     /* background: #ff040f; */
-    background: #7632d0;
+    background: #00ffcb;
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: -5px;
     transition: 0.5s;
 }
 
@@ -461,10 +423,10 @@ hr {
     margin-top: 20px;
     margin-right: 5px;
     /* color: #ff004f; */
-    color: #9b5deb;
+    color: #00ffcb;
     text-decoration: none;
     font-size: 18px;
-    background: #fff;
+    background: #FEFFFF;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -514,7 +476,7 @@ layer .row {
 
 .contact-left p i {
     /* color: #ff004f; */
-    color: #9b5deb;
+    color: #00ffcb;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -534,7 +496,7 @@ layer .row {
 
 .social-icons a:hover {
     /* color: #ff004f; */
-    color: #9b5deb;
+    color: #00ffcb;
     transform: translateY(-5px);
 }
 
@@ -543,23 +505,24 @@ layer .row {
     margin: 50px auto;
     width: fit-content;
     /* border: 1px solid #ff004f; */
-    border: 1px solid #9b5deb;
+    border: 1px solid #00ffcb;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    background: none;
 }
 
 .btn:hover {
     /* background: #ff004f; */
-    background: #9b5deb;
+    background: #00ffcb;
 }
 
 .btn.btn2 {
     display: inline-block;
     /* background: #ff004f; */
-    background: #9b5deb;
+    /* background: #9b5deb; */
 }
 
 .contact-right form {
@@ -574,9 +537,14 @@ form textarea {
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #7DF9FF;
     font-size: 18px;
     border-radius: 6px;
+}
+form input:focus,
+form textarea:focus {
+    border : 1px solid  #00ffcb;
+    outline-offset: 0px;
 }
 
 form .btn2 {
@@ -607,6 +575,20 @@ nav .fas {
         margin-top: 100%;
         font-size: 16px;
     }
+    .about-col-1 img {
+        width: 101.6%;
+        height: 91%;
+        border-radius: 44% 31%;
+        /* mix-blend-mode: color-burn; */
+        
+    }
+    #sw-js-blob-svg{
+        z-index: -1;
+        width: 420px;
+        height: 530px;
+        position: absolute;
+        transform: translateX(-15%);
+    }
 
     .header-text h1 {
         font-size: 30px;
@@ -626,9 +608,9 @@ nav .fas {
     }
 
     nav ul {
-        /* background: #ff004f; */
+        background: #0aa8e7;
         /* background: #9b5deb; */
-        background: #e7628c;
+        /* background: #be6db0; */
         position: fixed;
         top: 0;
         right: -150px;
