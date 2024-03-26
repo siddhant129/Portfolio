@@ -70,6 +70,7 @@ nav ul li a {
     color: #C08FFE;
     text-shadow: 0 0 5px currentColor;
 } */
+
 nav ul li a::after {
   content: "";
   width: 0;
